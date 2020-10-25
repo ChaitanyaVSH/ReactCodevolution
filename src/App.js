@@ -9,6 +9,8 @@ import RefForwardingParent from "./components/RefForwardingParent";
 import PortalDemo from "./components/PortalDemo";
 import HeroErrorBoundaryDemo from "./components/HeroErrorBoundaryDemo";
 import ErrorBoundary from "./components/ErrorBoundary";
+import ClickCounter from "./components/HigherOrderComponents/ClickCounter";
+import HoverCounter from "./components/HigherOrderComponents/HoverCounter";
 
 class App extends Component {
   state = {};
@@ -24,9 +26,11 @@ class App extends Component {
         <RefForwardingParent />
         <PortalDemo /> */}
         <ErrorBoundary>
-          <HeroErrorBoundaryDemo heroName="joker" />
+          <HeroErrorBoundaryDemo heroName="jokerr" />
           <HeroErrorBoundaryDemo heroName="Chaitu Maverick" />
         </ErrorBoundary>
+        <ClickCounter />
+        <HoverCounter />
       </div>
     );
   }

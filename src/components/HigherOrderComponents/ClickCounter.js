@@ -21,4 +21,4 @@ export class ClickCounter extends Component {
   }
 }
 
-export default updatedComponent(ClickCounter);
+export default updatedComponent(ClickCounter, 5);

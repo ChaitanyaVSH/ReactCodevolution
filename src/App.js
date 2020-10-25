@@ -7,20 +7,26 @@ import RefsDemo from "./components/RefsDemo";
 import ParentClassComponentRefs from "./components/ParentClassComponentRefs";
 import RefForwardingParent from "./components/RefForwardingParent";
 import PortalDemo from "./components/PortalDemo";
+import HeroErrorBoundaryDemo from "./components/HeroErrorBoundaryDemo";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 class App extends Component {
   state = {};
   render() {
     return (
       <div className="App">
-        <FragmentDemo />
-        {/* <PureComp />
+        {/* <FragmentDemo />
+        <PureComp />
         <RegularComponent />
-        <ParentComponent /> */}
+        <ParentComponent />
         <RefsDemo />
         <ParentClassComponentRefs />
         <RefForwardingParent />
-        <PortalDemo />
+        <PortalDemo /> */}
+        <ErrorBoundary>
+          <HeroErrorBoundaryDemo heroName="joker" />
+          <HeroErrorBoundaryDemo heroName="Chaitu Maverick" />
+        </ErrorBoundary>
       </div>
     );
   }

@@ -29,8 +29,8 @@ class App extends Component {
           <HeroErrorBoundaryDemo heroName="jokerr" />
           <HeroErrorBoundaryDemo heroName="Chaitu Maverick" />
         </ErrorBoundary>
-        <ClickCounter />
-        <HoverCounter />
+        <ClickCounter name="Chaitu Maverick" />
+        <HoverCounter name="Chaitu Maverick" />
       </div>
     );
   }

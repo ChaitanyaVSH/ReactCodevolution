@@ -11,6 +11,9 @@ import HeroErrorBoundaryDemo from "./components/HeroErrorBoundaryDemo";
 import ErrorBoundary from "./components/ErrorBoundary";
 import ClickCounter from "./components/HigherOrderComponents/ClickCounter";
 import HoverCounter from "./components/HigherOrderComponents/HoverCounter";
+import ClickCounter2 from "./components/RenderPropsPattern/ClickCounter2";
+import HoverCounter2 from "./components/RenderPropsPattern/HoverCounter2";
+import User from "./components/RenderPropsPattern/User";
 
 class App extends Component {
   state = {};
@@ -29,8 +32,15 @@ class App extends Component {
           <HeroErrorBoundaryDemo heroName="jokerr" />
           <HeroErrorBoundaryDemo heroName="Chaitu Maverick" />
         </ErrorBoundary>
+
+        {/* React Higher Order Components pattern */}
         <ClickCounter name="Chaitu Maverick" />
         <HoverCounter name="Chaitu Maverick" />
+
+        {/* React Render Props pattern */}
+        <ClickCounter2 />
+        <HoverCounter2 />
+        <User name={(isLoggedIn) => (isLoggedIn ? "Chaitanya" : "Guest")} />
       </div>
     );
   }

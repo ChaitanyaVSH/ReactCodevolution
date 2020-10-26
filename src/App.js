@@ -45,9 +45,8 @@ class App extends Component {
         <User name={(isLoggedIn) => (isLoggedIn ? "Chaitanya" : "Guest")} /> */}
 
         {/* React Context API */}
-        <UserProvider value="Chotu">
-          <ComponentC />
-        </UserProvider>
+
+        <ComponentC />
       </div>
     );
   }

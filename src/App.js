@@ -14,6 +14,8 @@ import HoverCounter from "./components/HigherOrderComponents/HoverCounter";
 import ClickCounter2 from "./components/RenderPropsPattern/ClickCounter2";
 import HoverCounter2 from "./components/RenderPropsPattern/HoverCounter2";
 import User from "./components/RenderPropsPattern/User";
+import ComponentC from "./components/ReactContextAPI/ComponentC";
+import { UserProvider } from "./components/ReactContextAPI/UserContext";
 
 class App extends Component {
   state = {};
@@ -38,9 +40,14 @@ class App extends Component {
         <HoverCounter name="Chaitu Maverick" />
 
         {/* React Render Props pattern */}
-        <ClickCounter2 />
+        {/* <ClickCounter2 />
         <HoverCounter2 />
-        <User name={(isLoggedIn) => (isLoggedIn ? "Chaitanya" : "Guest")} />
+        <User name={(isLoggedIn) => (isLoggedIn ? "Chaitanya" : "Guest")} /> */}
+
+        {/* React Context API */}
+        <UserProvider value="Chotu">
+          <ComponentC />
+        </UserProvider>
       </div>
     );
   }
